@@ -23,14 +23,63 @@ main{
     border-radius: 16px;
     padding: 66px 16px 16px 16px;
 }
-.foto{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
+.perfil{
+    width: 120px;
+    height: 120px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 50%;
     translate: -50% -50%;
+    border-radius: 50%;
+    border: 2px solid #00000040;
+    overflow: hidden;
+}
+.foto,
+.logo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    width: 100%;
+    height: 32px;
     border: 1px solid #00000040;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa20;
+    color: #101010;
+    text-decoration: none;
+    transition: .3s;
+    i{
+        margin-right: 8px;
+    }
+}
+a:hover{
+    background-color: #fafafa80;
+    font-size: 18px;
 }
